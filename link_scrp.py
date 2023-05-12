@@ -14,10 +14,9 @@ try:
     for lnk in lnks:
         if "Hack" in lnk.text:
             answer = "Link text: " + lnk.get_attribute("href")
-            #print(json.dumps(answer, indent=4))
             print(answer)
 finally:
     time.sleep(5)
     browser.quit()
     exit(0)
-
+	
